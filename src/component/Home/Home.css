@@ -1,0 +1,175 @@
+
+#home{
+    position: relative;
+    overflow: hidden;
+    min-height: calc(100vh - 84px);
+    padding: 5rem 0 0;
+    @media (max-width:767px){
+        padding: 2rem 0 0;
+    }
+    .banner_image{
+        position:absolute;
+        overflow: hidden;
+        background: url('../../images/banner.png') no-repeat center center;
+        background-size:cover;
+        top:0;
+        z-index:1;
+        width: 100%;
+        height: 100%;
+        min-height: calc(100vh - 84px);
+        transform:scale(1.1);
+        animation: wave 3s linear infinite;
+        &::before{
+            content:" ";
+            position:absolute;
+            top: 0;
+            min-height: 100%;
+            left:0;
+            right:0;
+            z-index: 2;
+            background: var(--dark-layer-color);
+        }
+    }
+    .banner_outer{
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        position:relative;
+        z-index: 3;
+        @media  (max-width:992px) {
+            flex-direction: column-reverse;
+        }
+        .col{
+            width: calc(100%/2 - 15px );
+            height: auto;
+            position: relative;
+
+            @media (max-width:992px) {
+                width:fit-content;
+                padding: 2rem;
+            }
+            @media (max-width:767px) {
+                padding: 1.5rem;
+            }
+        }
+        .title{
+            width: 80%;
+            font-size: 3rem;
+            line-height: 5rem;
+            margin-bottom: 1rem;
+            font-weight: 200 !important;
+            text-transform: uppercase;
+            color: white;
+        
+            & span{
+                font-weight:800;
+             }
+           
+            @media (max-width:992px) {
+                width: 100%;
+                margin-top: 10erm;
+                text-align: center;
+                line-height: 4rem;
+            }
+            
+            @media (max-width:767px) {
+                width:100%;
+            }
+        }
+        & p{
+            width: 80%;
+            font-size: 1.143rem;
+            line-height: 2rem;
+            color: white;
+
+            @media (max-width:992px) {
+               width: 100%;
+               text-align: center; 
+            }
+        }
+        .sub_banner_image{
+              background-color: var( --secondary-color);
+              border-radius: 0 3rem;
+
+              & img {
+                border-radius: .4rem 4.571rem;
+                margin-top: -2rem;
+                margin-left: 0.1rem;
+                max-width: 100%;
+              }
+        }
+        .banner_style1{
+            display: flex;
+            align-items: center;
+            box-shadow: 0 1rem 3rem rgb(0 0 0 /12%);
+            background: rgb(99, 98, 98);
+            position: absolute;
+            right: 35px;
+            bottom: 28px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            width: max-content;
+            height: max-content;
+
+            & h4{
+                margin: 0;
+                font-size: 1.286rem;
+
+            }
+            & svg{
+                line-height: 40px;
+                margin-right: 16px;
+                text-align: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+               
+
+                & path{
+                    fill: rgb(31, 156, 31);
+                }
+            }
+        }
+        .banner_style2{
+            right: 0;
+            left: -3.8rem;
+            bottom:28px;
+
+            & svg {
+                & path{
+                    fill: rgb(245, 32, 32);
+                }
+            }
+        }
+        .banner_style3{
+            right: 0;
+            left: -4.2rem;
+            bottom:0;
+            top: 10px;
+            
+            & svg {
+                & path{
+                    fill: rgb(47, 47, 240);
+                }
+            }
+            @media (max-width:992px) {
+                left: -20px;
+            }
+        }
+
+        }
+
+        
+    }
+    @keyframes wave{
+        0%, 100%
+        {
+            transform: translate(0px, 0px);
+        }
+     50%
+        {
+            transform: translate(-10px, -10px);
+        }
+    }
+  
+

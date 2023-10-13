@@ -1,0 +1,119 @@
+
+:root{
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+  --pink: #FF919D;
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #f799a354;
+  --primary-font:c'Poppins',sans-serif;
+  --dark-layer-color:linear-gradient(to top, rgb(21 21 21 / 67%), rgb(23 23 23/ 20%))
+  --secondary-color:var(--pink)
+}
+
+.html , body {
+  font-size: 14px;
+  font-family: var( --primary-font);
+  background-color:black;
+}
+::-webkit-scrollbar{
+  width: .375rem;
+
+}
+::-webkit-scrollbar{
+  background-color: var(--gray);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--gray);
+}
+
+
+/* Pre-define classes CSS */
+
+a{
+  text-decoration: none;
+}
+.container-fluid{
+  width: 100%;
+  margin-left: auto;
+  padding: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+.container{
+  width: auto;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-right: 1rem;
+ 
+}
+.btn_wrapper{
+  margin-top: 2.523rem;
+  @media (max-width:992px) {
+    width: 100%;
+    text-align:center;
+    display: block;
+  }
+  @media (max-width:767px) {
+   margin-bottom: 3rem;
+
+  }
+  .btn{
+    padding: 0.857rem 2.571rem;
+    font-size: 1.143rem;
+    border-radius: 2.143rem;
+    font-weight: 600;
+    box-shadow: 0 0.5rem 1rem rgb(16,16,16);
+    outline: 2px solid var(--gray);
+    outline-offset: 0px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(184, 19, 142);
+    transition: all .3s ease-in-out;
+    &:hover{
+      outline-offset: 10px;
+    }
+  }
+}
+.h1{
+  font-size: 3.875rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+h2{
+  font-size: 2.75rem;
+   font-weight: 600;
+   color: white;
+}
+h3{
+  font-size: 2.25rem;
+  font-weight: 600;
+  color:white !important;
+}
+h4{
+  font-size: 1.5rem;
+
+  font-weight: 600;
+  color: white;
+}
+h5{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+p{
+  font-size: 1.28rem;
+  color: white;
+}
+
